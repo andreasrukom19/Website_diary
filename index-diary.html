@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diary Site</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="wrapper">
@@ -21,6 +22,31 @@
     </header>
     <main>
       <h1>Settings</h1>
+      <div class="form-header">
+        <h2>Avatar</h2>
+        <h2>Student's info</h2>
+        <h2>Change password</h2>
+      </div>
+      <form action="#" method="POST" name="user-profile">
+        <div class="avatar">
+          <img src="icons/av_256.png" alt="avatar-big" width="256" height="256">
+        </div>
+        <div class="info">
+          <input type="text" name="username" placeholder="First name">
+          <input type="text" name="username" placeholder="Last name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="tel" name="phone" placeholder="Phone number">
+          <input type="text" name="address" placeholder="Address">
+          <input type="text" name="social-link" placeholder="FB link">
+          <button type="submit">Save changes</button>
+        </div>
+        <div class="password">
+          <input type="password" name="old-password" placeholder="Old password">
+          <input type="password" name="new-password" placeholder="New password">
+          <input type="password" name="repeat-password" placeholder="Repeat password">
+          <button type="submit">Changes password</button>
+        </div>
+      </form>
     </main>
   </div>
 </body>
