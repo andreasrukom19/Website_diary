@@ -7,8 +7,54 @@ body {
   width: 90%;
   margin: 0 auto;
   border: 1px solid #ccc;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 20px;
   box-sizing: border-box;
+}
+header {
+  padding: 5px 40px;
+  background-color: #1b5589;
+  display: flex;
+  justify-content: space-between;
+}
+h1, h2 {
+  margin: 0;
+}
+.navigation {
+  display: flex;
+}
+.navigation::before {
+  content: "";
+  width: 47px;
+  height: 47px;
+  background-image: url("../icons/blueImg.png");
+  margin-top: 10px;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.nav-list li {
+  margin-left: 15px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(194, 190, 190);
+}
+.nav-list li:last-child a {
+  color: white;
+}
+.nav-list li a:hover {
+  color: white;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: normal;
+}
+.form-header {
+  
 }
