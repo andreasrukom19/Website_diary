@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
 }
 .wrapper {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   border: 1px solid #ccc;
   padding-bottom: 20px;
@@ -23,11 +23,11 @@ input {
   display: block;
   width: 100%;
   padding: 0;
-  border: none;
-  outline: 1px solid #ccc;
+  border: 1px solid #ccc;
   box-sizing: border-box;
   padding: 5px;
   margin: 10px 0;
+  border-radius: 4px;
 }
 .navigation {
   display: flex;
@@ -69,23 +69,26 @@ h1 {
 }
 .form-header {
   display: flex;
+  justify-content: space-between;
   background-color: #CCE5FF;
-  padding: 10px 30px;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 .form-header h2 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
   color: #1b5589;
+  text-align: center;
 }
 .avatar-title {
-  margin-left: 5%;
+  width: 25%;
 }
 .info-title {
-  margin-left: 23%;
+  width: 37%;
 }
 .password-title {
-  margin-left: 22%;
+  width: 37%;
 }
 .profile {
   margin: 0 40px;
@@ -105,4 +108,40 @@ h1 {
 .password {
   width: 35%;
   box-sizing: border-box;
+}
+button {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+  background-color: #6C757D;
+  color: white;
+  border-radius: 4px;
+}
+button:hover,
+.avatar label:hover {
+  background-color: rgb(55, 59, 63);
+}
+button:active,
+.avatar label:active {
+  background-color: rgb(171, 185, 197);
+}
+.avatar input {
+  display: none;
+}
+.avatar label {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #6C757D;
+  padding: 7px 0;
+  font-size: 13px;
+  color: white;
+  border-radius: 4px;
+}
+.avatar-min img {
+  display: block;
+  margin: 5px;
+  width: 44px;
+  height: 44px;
 }
