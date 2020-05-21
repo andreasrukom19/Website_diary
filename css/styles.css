@@ -4,14 +4,14 @@ body {
   font-family: Arial, sans-serif;
 }
 .wrapper {
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
   border: 1px solid #ccc;
   padding-bottom: 20px;
   box-sizing: border-box;
 }
 header {
-  padding: 5px 40px;
+  padding: 0 40px;
   background-color: #1b5589;
   display: flex;
   justify-content: space-between;
@@ -19,15 +19,26 @@ header {
 h1, h2 {
   margin: 0;
 }
+input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 0;
+}
 .navigation {
   display: flex;
 }
 .navigation::before {
   content: "";
-  width: 47px;
-  height: 47px;
+  width: 37px;
+  height: 37px;
   background-image: url("../icons/blueImg.png");
   margin-top: 10px;
+  background-size: 37px 37px;
 }
 .nav-list {
   margin: 0;
@@ -52,9 +63,46 @@ h1, h2 {
 h1 {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 26px;
   font-weight: normal;
 }
 .form-header {
-  
+  display: flex;
+  background-color: #CCE5FF;
+  padding: 10px 30px;
+}
+.form-header h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #1b5589;
+}
+.avatar-title {
+  margin-left: 5%;
+}
+.info-title {
+  margin-left: 23%;
+}
+.password-title {
+  margin-left: 22%;
+}
+.profile {
+  margin: 0 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar {
+  width: 25%;
+  text-align: center;
+}
+.info {
+  width: 35%;
+  box-sizing: border-box;
+}
+.password {
+  width: 35%;
+  box-sizing: border-box;
 }
